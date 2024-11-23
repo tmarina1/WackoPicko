@@ -4,6 +4,7 @@ output:
   format: CSV
 working_dir: .
 language: EN
+strict: true
 apk:
   include:
     - glob(**/*.apk)

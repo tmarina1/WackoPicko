@@ -12,6 +12,7 @@ jobs:
 
          - name: Upload Scan Results
            uses: actions/upload-artifact@v4
+           if: always()
            with:
              name: scan-results
              path: ./Fluid-Attacks-Results.csv

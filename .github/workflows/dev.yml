@@ -8,4 +8,4 @@ jobs:
          - uses: docker://docker.io/fluidattacks/cli:latest
            name: machineStandalone
            with:
-             args: skims --strict scan WackoPicko/config.yml
+             args: skims --strict scan ./config.yml

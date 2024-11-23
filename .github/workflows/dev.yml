@@ -6,7 +6,11 @@ jobs:
       steps:
          - uses: actions/checkout@f095bcc56b7c2baf48f3ac70d6d6782f4f553222
          - uses: docker://docker.io/fluidattacks/cli:latest
-         - uses: actions/upload-artifact@v4 
            name: machineStandalone
            with:
              args: skims --strict scan ./config.yml
+
+         - name: Upload Scan Results
+           uses: actions/upload-artifact@v4
+           with:
+             name: scan-results
